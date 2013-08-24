@@ -31,7 +31,7 @@ var editor = new TextEditor({
 
 ### Loading Plugins
 
-Instead of having to call [`require`](#prototyperequirename) for every plugin that needs to be loaded when the instance is being set up, there's a convencience method for loading multiple plugins [`initializePlugins`](#prototypeinitializepluginsplugins) (with options). The method accepts a list of plugins in any of three styles:
+The [`initializePlugins()`](#prototypeinitializepluginsplugins) method sets up the plugin system and loads a list of plugins (with options). It accepts the list in three styles, depending on your preference.
 
 #### List (no options)
 ```js
@@ -104,7 +104,7 @@ Declares a new plugin with the specified name.
 Loads a plugin as a dependency and returns whatever it exports (if anything).
 
 #### [prototype].initializePlugins(plugins)
-Loads multiple plugins with th provided options. The "plugins" argument can be in a [variety of formats](#loading-plugins).
+Initializes the plugin system and loads a list of plugins with the provided options. The "plugins" argument can be in a [variety of formats](#loading-plugins).
 
 ## License
 
