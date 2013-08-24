@@ -6,7 +6,7 @@
 
 ```sh
 $ npm install microplugin
-$ bower install
+$ bower install microplugin
 ```
 
 ## Integration
