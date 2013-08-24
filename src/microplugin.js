@@ -74,17 +74,18 @@
 			}
 
 			while (queue.length) {
-				self.loadPlugin(queue.shift());
+				self.require(queue.shift());
 			}
 		};
 
 		Interface.prototype.loadPlugin = function(name) {
-			if (!Interface.plugins.hasOwnProperty(name)) {
-				throw new Error('Unable to find "' +  name + '" plugin');
-			}
 			var self    = this;
 			var plugins = self.plugins;
 			var plugin  = Interface.plugins[name];
+
+			if (!Interface.plugins.hasOwnProperty(name)) {
+				throw new Error('Unable to find "' +  name + '" plugin');
+			}
 
 			plugins.requested[name] = true;
 			plugins.loaded[name] = plugin.fn.apply(self, [self.plugins.settings[name] || {}]);
