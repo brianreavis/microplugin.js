@@ -10,7 +10,6 @@ else
 	sed -i.bak 's/"version": "[^"]*"/"version": "$(version)"/' package.json
 	sed -i.bak 's/"version": "[^"]*"/"version": "$(version)"/' bower.json
 	rm *.bak
-	make compile
 	git add .
 	git commit -a -m "Released $(version)."
 	git tag v$(version)
