@@ -2,7 +2,7 @@
 [![NPM version](https://badge.fury.io/js/microplugin.png)](http://badge.fury.io/js/microplugin)
 [![Build Status](https://travis-ci.org/brianreavis/microplugin.js.png?branch=master)](https://travis-ci.org/brianreavis/microplugin.js)
 
-*Keep code modularized & extensible.* MicroPlugin is a lightweight drop-in plugin architecture for your JavaScript library. Plugins can [declare dependencies](#dependencies) to other plugins and can be [initialized with options](#loading-plugins) (in a variety of formats). It's [CommonJS](http://commonjs.org), so it works identically in Node.js and in a browser.
+*Keep code modularized & extensible.* MicroPlugin is a lightweight drop-in plugin architecture for your JavaScript library. Plugins can [declare dependencies](#dependencies) to other plugins and can be [initialized with options](#loading-plugins) (in a variety of formats). It [AMD](http://en.wikipedia.org/wiki/Asynchronous_module_definition)-compatible and it works identically in Node.js and in a browser.
 
 ```sh
 $ npm install microplugin
