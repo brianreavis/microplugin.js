@@ -126,7 +126,7 @@
 	};
 
 	var utils = {
-		isArray: Array.isArray || function() {
+		isArray: Array.isArray || function(vArg) {
 			return Object.prototype.toString.call(vArg) === '[object Array]';
 		}
 	};
