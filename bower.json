@@ -10,13 +10,13 @@
 		"url": "git://github.com/brianreavis/microplugin.js.git"
 	},
 	"main": [
-		"src/microplugin.js"
+		"microplugin.js"
 	],
 	"ignore": [
 		"Makefile",
 		"test",
 		".travis.yml",
-		".npmignore.yml"
+		".npmignore"
 	],
 	"dependencies": {}
 }

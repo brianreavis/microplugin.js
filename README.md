@@ -1,6 +1,7 @@
 # microplugin.js
 [![NPM version](https://badge.fury.io/js/microplugin.png)](http://badge.fury.io/js/microplugin)
 [![Build Status](https://travis-ci.org/brianreavis/microplugin.js.png?branch=master)](https://travis-ci.org/brianreavis/microplugin.js)
+[![Coverage Status](https://coveralls.io/repos/brianreavis/microplugin.js/badge.png)](https://coveralls.io/r/brianreavis/microplugin.js)
 
 *Keep code modularized & extensible.* MicroPlugin is a lightweight drop-in plugin architecture for your JavaScript library. Plugins can [declare dependencies](#dependencies) to other plugins and can be [initialized with options](#loading-plugins) (in a variety of formats). It [AMD](http://en.wikipedia.org/wiki/Asynchronous_module_definition)-compatible and it works identically in Node.js and in a browser.
 
